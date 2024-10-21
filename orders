@@ -1,0 +1,60 @@
+No worries! You’re asking about **tree traversal** methods: in-order, pre-order, and post-order. These are ways to visit all the nodes in a tree systematically. Here's what each of them does:
+
+### 1. **In-order Traversal (LNR - Left, Node, Right)**:
+- In in-order traversal, the left subtree is visited first, then the current node, and finally the right subtree.
+- This traversal gives nodes in **ascending order** for a binary search tree (BST).
+
+Steps:
+1. Traverse the left subtree.
+2. Visit the node.
+3. Traverse the right subtree.
+
+Example:
+```
+      50
+     /  \
+   30    70
+  /  \   /  \
+20   40 60  80
+```
+
+**In-order traversal**: 20, 30, 40, 50, 60, 70, 80
+
+---
+
+### 2. **Pre-order Traversal (NLR - Node, Left, Right)**:
+- In pre-order traversal, the current node is visited first, then the left subtree, and finally the right subtree.
+- This is useful for creating a copy of the tree.
+
+Steps:
+1. Visit the node.
+2. Traverse the left subtree.
+3. Traverse the right subtree.
+
+Example for the same tree:
+**Pre-order traversal**: 50, 30, 20, 40, 70, 60, 80
+
+---
+
+### 3. **Post-order Traversal (LRN - Left, Right, Node)**:
+- In post-order traversal, the left subtree is visited first, then the right subtree, and finally the current node.
+- This is useful for deleting the tree because you first delete the subtrees before the node itself.
+
+Steps:
+1. Traverse the left subtree.
+2. Traverse the right subtree.
+3. Visit the node.
+
+Example for the same tree:
+**Post-order traversal**: 20, 40, 30, 60, 80, 70, 50
+
+---
+
+### Summary of the three traversals:
+- **In-order**: Left → Node → Right
+- **Pre-order**: Node → Left → Right
+- **Post-order**: Left → Right → Node
+
+They all go through the entire tree but in different sequences, depending on when the current node is visited.
+
+Would you like to implement these traversal methods in your Java code?
