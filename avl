@@ -1,0 +1,23 @@
+AVL Tree is a self-balancing binary search tree, named after its inventors Adelson-Velsky and Landis. In an AVL tree, the heights of the two child subtrees of any node differ by at most one. If the difference becomes more than one, the tree rebalance itself using rotations (left and right).
+
+Key Properties of AVL Trees:
+Height-balanced: For every node in the tree, the height difference between its left and right subtrees (called the balance factor) is at most 1.
+
+Balance factor = Height of left subtree - Height of right subtree
+If the balance factor is:
+1, the left subtree is taller.
+-1, the right subtree is taller.
+0, both subtrees are of equal height.
+Self-balancing: The AVL tree maintains its balance by performing rotations when nodes are added or removed, ensuring efficient performance in all operations.
+
+AVL Tree Rotations:
+There are four types of rotations used to balance an AVL tree:
+
+Left Rotation (LL): Happens when a right subtree becomes taller, making the tree right-heavy.
+Right Rotation (RR): Happens when a left subtree becomes taller, making the tree left-heavy.
+Left-Right Rotation (LR): A combination of left and right rotation.
+Right-Left Rotation (RL): A combination of right and left rotation.
+AVL Tree Operations:
+Insertion: After a new node is inserted, the balance factor of the nodes is checked. If the balance factor is violated, the tree is rebalanced using rotations.
+Deletion: After a node is deleted, the tree is rebalanced if necessary.
+Search: Same as in a normal binary search tree, with a time complexity of O(log n).
